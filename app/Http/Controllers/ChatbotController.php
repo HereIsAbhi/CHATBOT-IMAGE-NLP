@@ -25,7 +25,7 @@ class ChatbotController extends Controller
             $systemPrompt = $this->buildSystemPrompt($imageContext);
             
             $response = $this->openai->chat()->create([
-                'model' => 'gpt-4',
+                'model' => 'gpt-3.5-turbo',
                 'messages' => [
                     [
                         'role' => 'system',
